@@ -1,0 +1,120 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 180px; /* Logo más grande */
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+
+/* Estilo para las secciones principales */
+main {
+    padding: 20px;
+}
+
+/* Sección de cursos */
+.cursos {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los cursos se ajusten en varias filas si es necesario */
+    gap: 20px;  /* Espacio entre los cursos */
+    justify-content: space-between; /* Alinea los cursos con espacio entre ellos */
+}
+
+/* Estilos para cada curso */
+.curso {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;  /* Cada curso ocupa el 48% del contenedor, dejando un pequeño espacio entre ellos */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.curso img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Mantiene la proporción y ajusta la imagen al contenedor */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.precio {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+button.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del enlace "Ver más" */
+a.ver-mas {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a.ver-mas:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .curso {
+        width: 100%; /* Los cursos ocuparán el 100% del ancho en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
